@@ -8,6 +8,7 @@
     --primary_color: #1c5550;
     --button: #C3B97F;
     --text_frame: #DFD9D9;
+    --current_line: #91B599;
 }
 
 /* CONTAINER  */
@@ -78,7 +79,7 @@ header {
 }
 
 .search_text {
-    color: #91B599;
+    color: var(--current_line);
     font-family: 'Inter', sans-serif;
     font-size: 14px;
 }
@@ -117,16 +118,18 @@ aside {
 }
 
 .aside_current_text {
-    color: #91B599;
+    color: var(--current_line);
     margin-left: 48px;
     font-family: 'Inter', sans-serif;
     font-size: 14px;
     font-weight: 700;
     line-height: 25px;
+    padding-bottom: 2px;
+    border-bottom: 1px solid var(--current_line);
 }
 
 .aside_text {
-    color: #91B599;
+    color: var(--current_line);
     margin-left: 48px;
     font-family: 'Inter', sans-serif;
     font-size: 14px;
