@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
 
+/* ROOT  */
+
 :root {
     --dark_opacity: #00000033;
     --shadow_light: #dfd9d966;
@@ -7,6 +9,8 @@
     --button: #C3B97F;
     --text_frame: #DFD9D9;
 }
+
+/* CONTAINER  */
 
 .container {
     width: 1440px;
@@ -25,6 +29,8 @@
         "CARD1 CARD2 CARD3 CARD4";
 }
 
+/* HEADER  */
+
 header {
     display: flex;
     justify-content: space-between;
@@ -32,6 +38,8 @@ header {
     /* font-size: 40px; */
     grid-area: HEADER;
 }
+
+/* HEADER NAV  */
 
 .header_ul {
     display: flex;
@@ -47,12 +55,16 @@ header {
     align-items: center;
 }
 
+         /* RIGHT SIDE FRAME */
+
 .right_side {
     display: flex;
     justify-content: space-between;
     align-items: center;
     column-gap: 32px;
 }
+
+/* SEARCH  */
 
 .search {
     display: flex;
@@ -71,6 +83,8 @@ header {
     font-size: 14px;
 }
 
+/* ICONS  */
+
 .user_icon {
     padding: 4px;
     border-radius: 4px;
@@ -84,6 +98,8 @@ header {
     background: var(--dark_opacity);
     box-shadow: 0px 2px 4px -2px var(--shadow_light) inset, 0px 2px 4px 0px var(--dark_opacity);
 }
+
+       /* ASIDE  */
 
 aside {
     grid-area: ASIDE;
@@ -117,6 +133,8 @@ aside {
     line-height: 25px;
 }
 
+    /* BIG CARD  */
+
 .big_card {
     grid-area: BCARD;
     position: relative;
@@ -127,6 +145,8 @@ aside {
     height: 100%;
     object-fit: cover;
 }
+
+/* BIG CARD BUY FRAME  */
 
 .large_buy_frame {
     display: inline-flex;
@@ -163,13 +183,19 @@ aside {
     border: none;
 }
 
+/* IMG 1 CARD  */
+
 .img_1_card {
     grid-area: IMG1;
 }
 
+/* IMG 2 CARD  */
+
 .img_2_card {
     grid-area: IMG2;
 }
+
+/* BOTTOM CARDS  */
 
 .img_card_1 {
     grid-area: CARD1;
@@ -191,6 +217,8 @@ aside {
     position: relative;
 }
 
+/* BOTTOM CARD TITLE  */
+
 .bottom_title {
     color: var(--primary_color);
     font-family: 'Inter', sans-serif;
@@ -204,12 +232,16 @@ aside {
     left: 2%;
 }
 
+/* BOTTOM CARD PARAGRAPH  */
+
 .bottom_p {
     color: var(--text_frame);
     font-family: 'Inter', sans-serif;
     line-height: 24px;
     margin: 8px 0 8px 0;
 }
+
+/* BOTTOM CARD BUY FRAME  */
 
 .bottom_buy_frame {
     display: inline-flex;
