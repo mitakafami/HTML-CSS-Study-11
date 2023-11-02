@@ -9,6 +9,9 @@
     --button: #C3B97F;
     --text_frame: #DFD9D9;
     --current_line: #91B599;
+    --text_size: 14px;
+    --special_size: 18px;
+    --title_size: 24px;
 }
 
 /* CONTAINER  */
@@ -36,7 +39,6 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    /* font-size: 40px; */
     grid-area: HEADER;
 }
 
@@ -50,7 +52,7 @@ header {
 .header_text {
     color: var(--text_frame);
     font-family: 'Inter', sans-serif;
-    font-size: 18px;
+    font-size: var(--special_size);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -81,7 +83,7 @@ header {
 .search_text {
     color: var(--current_line);
     font-family: 'Inter', sans-serif;
-    font-size: 14px;
+    font-size: var(--text_size);
 }
 
 /* ICONS  */
@@ -121,7 +123,7 @@ aside {
     color: var(--current_line);
     margin-left: 48px;
     font-family: 'Inter', sans-serif;
-    font-size: 14px;
+    font-size: var(--text_size);
     font-weight: 700;
     line-height: 25px;
     padding-bottom: 2px;
@@ -132,7 +134,7 @@ aside {
     color: var(--current_line);
     margin-left: 48px;
     font-family: 'Inter', sans-serif;
-    font-size: 14px;
+    font-size: var(--text_size);
     line-height: 25px;
 }
 
@@ -180,7 +182,7 @@ aside {
     background: var(--button);
     color: var(--text_frame);
     font-family: 'Inter', sans-serif;
-    font-size: 14px;
+    font-size: var(--text_size);
     font-weight: 700;
     line-height: 22px;
     border: none;
@@ -225,7 +227,7 @@ aside {
 .bottom_title {
     color: var(--primary_color);
     font-family: 'Inter', sans-serif;
-    font-size: 24px;
+    font-size: var(--title_size);
     font-style: normal;
     font-weight: 700;
     line-height: 32px;
@@ -268,10 +270,10 @@ aside {
     padding: 9px 8px 9px 10px;
     justify-content: center;
     align-items: center;
-    background: var(--button)F;
+    background: var(--button);
     color: var(--text_frame);
     font-family: 'Inter', sans-serif;
-    font-size: 14px;
+    font-size: var(--text_size);
     font-weight: 700;
     line-height: 22px;
     border: none;
