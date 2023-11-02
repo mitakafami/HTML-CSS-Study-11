@@ -17,25 +17,12 @@
         "CARD1 CARD2 CARD3 CARD4";
 }
 
-div {
-    /* display: flex;
-    justify-content: center;
-    align-items: center; */
-}
-
 header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    font-size: 40px;
-    /* background-color: red;
-    border: 3px solid; */
+    /* font-size: 40px; */
     grid-area: HEADER;
-}
-
-.header_logo {
-    /* width: 48px;
-    height: 48px; */
 }
 
 .header_ul {
@@ -47,9 +34,9 @@ header {
     color: #DFD9D9;
     font-family: 'Inter', sans-serif;
     font-size: 18px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .right_side {
@@ -62,18 +49,19 @@ header {
 .search {
     display: flex;
     width: 315px;
-    height: 32px;
     padding: 8px 20px 7px 20px;
     justify-content: flex-end;
-    align-items: flex-start;
     gap: 100px;
-    flex-shrink: 0;
     border-radius: 4px;
     background: rgba(0, 0, 0, 0.20);
     box-shadow: 1.52px 3px 3px -0.8px rgba(0, 0, 0, 0.20) inset, 0px -0.3px 1px 0px rgba(223, 217, 217, 0.40) inset;
 }
 
-.search_icon {}
+.search_text {
+    color: #91B599;
+    font-family: 'Inter', sans-serif;
+    font-size: 14px;
+}
 
 .user_icon {
     padding: 4px;
@@ -90,14 +78,9 @@ header {
 }
 
 aside {
-    /* font-size: 40px;
-    background-color: green;
-    border: 3px solid; */
     grid-area: ASIDE;
     display: flex;
     flex-direction: column;
-    /* justify-content: center; */
-    /* align-items: center; */
     background: rgba(0, 0, 0, 0.20);
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.20) inset, 0px -1px 4px 0px rgba(223, 217, 217, 0.40) inset;
 }
@@ -105,46 +88,28 @@ aside {
 .aside_title {
     color: #C3B97F;
     margin: 38px 0 16px 40px;
-
-    /* paragraph2/p-regular */
     font-family: 'Inter', sans-serif;
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 400;
     line-height: 27px;
-    /* 168.75% */
 }
 
 .aside_current_text {
     color: #91B599;
     margin-left: 48px;
-
-    /* paragraph3/p-bold */
     font-family: 'Inter', sans-serif;
     font-size: 14px;
-    font-style: normal;
     font-weight: 700;
     line-height: 25px;
-    /* 178.571% */
 }
 
 .aside_text {
     color: #91B599;
     margin-left: 48px;
-
-    /* paragraph3/p-regular */
     font-family: 'Inter', sans-serif;
     font-size: 14px;
-    font-style: normal;
-    font-weight: 400;
     line-height: 25px;
-    /* 178.571% */
 }
 
 .big_card {
-    /* font-size: 40px;
-    background-color: greenyellow;
-    border: 3px solid; */
     grid-area: BCARD;
     position: relative;
 }
@@ -157,10 +122,8 @@ aside {
 
 .large_buy_frame {
     display: inline-flex;
-    /* padding-left: 0px; */
-    /* justify-content: flex-end; */
     align-items: center;
-    gap: 396.5px;
+    gap: 398px;
     background: #DFD9D9;
     position: absolute;
     left: 0%;
@@ -170,18 +133,15 @@ aside {
 .large_price {
     color: #1C5550;
     font-family: 'Inter', sans-serif;
-    font-size: 16px;
     font-style: normal;
     font-weight: 700;
     line-height: 24px;
-    /* 150% */
     padding: 8px 20px;
 }
 
 .large_button {
     display: flex;
     width: 180px;
-    /* background-color: violet; */
     height: 40px;
     padding: 9px 50px 9px 51px;
     justify-content: center;
@@ -190,17 +150,10 @@ aside {
     color: #DFD9D9;
     font-family: 'Inter', sans-serif;
     font-size: 14px;
-    font-style: normal;
     font-weight: 700;
     line-height: 22px;
-    /* 157.143% */
     border: none;
 }
-
-
-
-
-
 
 .img_1_card {
     grid-area: IMG1;
@@ -246,34 +199,22 @@ aside {
 .bottom_p {
     color: #DFD9D9;
     font-family: 'Inter', sans-serif;
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 400;
     line-height: 24px;
-    /* 150% */
     margin: 8px 0 8px 0;
 }
 
 .bottom_buy_frame {
     display: inline-flex;
-    /* padding-left: 0px; */
-    /* justify-content: flex-end; */
     align-items: center;
     gap: 144px;
     background: #DFD9D9;
-    /* position: absolute;
-    left: 0%;
-    top: 91.4%; */
 }
 
 .bottom_price {
     color: #1C5550;
     font-family: 'Inter', sans-serif;
-    font-size: 16px;
-    font-style: normal;
     font-weight: 700;
     line-height: 24px;
-    /* 150% */
     padding: 8px;
 }
 
@@ -288,7 +229,6 @@ aside {
     color: #DFD9D9;
     font-family: 'Inter', sans-serif;
     font-size: 14px;
-    font-style: normal;
     font-weight: 700;
     line-height: 22px;
     border: none;
