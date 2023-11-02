@@ -1,11 +1,19 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
 
+:root {
+    --dark_opacity: #00000033;
+    --shadow_light: #dfd9d966;
+    --primary_color: #1c5550;
+    --button: #C3B97F;
+    --text_frame: #DFD9D9;
+}
+
 .container {
     width: 1440px;
     margin: auto;
     display: grid;
     padding: 32px 20px;
-    background-color: #1C5550;
+    background-color: var(--primary_color);
     column-gap: 40px;
     row-gap: 48px;
     grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -31,7 +39,7 @@ header {
 }
 
 .header_text {
-    color: #DFD9D9;
+    color: var(--text_frame);
     font-family: 'Inter', sans-serif;
     font-size: 18px;
     display: flex;
@@ -53,8 +61,8 @@ header {
     justify-content: flex-end;
     gap: 100px;
     border-radius: 4px;
-    background: rgba(0, 0, 0, 0.20);
-    box-shadow: 1.52px 3px 3px -0.8px rgba(0, 0, 0, 0.20) inset, 0px -0.3px 1px 0px rgba(223, 217, 217, 0.40) inset;
+    background: var(--dark_opacity);
+    box-shadow: 1.52px 3px 3px -0.8px var(--dark_opacity) inset, 0px -0.3px 1px 0px var(--shadow_light) inset;
 }
 
 .search_text {
@@ -66,27 +74,27 @@ header {
 .user_icon {
     padding: 4px;
     border-radius: 4px;
-    background: rgba(0, 0, 0, 0.20);
-    box-shadow: 0px 2px 4px -2px rgba(223, 217, 217, 0.40) inset, 0px 2px 4px 0px rgba(0, 0, 0, 0.20);
+    background: var(--dark_opacity);
+    box-shadow: 0px 2px 4px -2px var(--shadow_light) inset, 0px 2px 4px 0px var(--dark_opacity);
 }
 
 .cart_icon {
     padding: 4px;
     border-radius: 4px;
-    background: rgba(0, 0, 0, 0.20);
-    box-shadow: 0px 2px 4px -2px rgba(223, 217, 217, 0.40) inset, 0px 2px 4px 0px rgba(0, 0, 0, 0.20);
+    background: var(--dark_opacity);
+    box-shadow: 0px 2px 4px -2px var(--shadow_light) inset, 0px 2px 4px 0px var(--dark_opacity);
 }
 
 aside {
     grid-area: ASIDE;
     display: flex;
     flex-direction: column;
-    background: rgba(0, 0, 0, 0.20);
-    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.20) inset, 0px -1px 4px 0px rgba(223, 217, 217, 0.40) inset;
+    background: var(--dark_opacity);
+    box-shadow: 0px 4px 4px 0px var(--dark_opacity) inset, 0px -1px 4px 0px var(--shadow_light) inset;
 }
 
 .aside_title {
-    color: #C3B97F;
+    color: var(--button);
     margin: 38px 0 16px 40px;
     font-family: 'Inter', sans-serif;
     line-height: 27px;
@@ -124,14 +132,14 @@ aside {
     display: inline-flex;
     align-items: center;
     gap: 398px;
-    background: #DFD9D9;
+    background: var(--text_frame);
     position: absolute;
     left: 0%;
     top: 91.4%;
 }
 
 .large_price {
-    color: #1C5550;
+    color: var(--primary_color);
     font-family: 'Inter', sans-serif;
     font-style: normal;
     font-weight: 700;
@@ -146,8 +154,8 @@ aside {
     padding: 9px 50px 9px 51px;
     justify-content: center;
     align-items: center;
-    background: #C3B97F;
-    color: #DFD9D9;
+    background: var(--button);
+    color: var(--text_frame);
     font-family: 'Inter', sans-serif;
     font-size: 14px;
     font-weight: 700;
@@ -184,7 +192,7 @@ aside {
 }
 
 .bottom_title {
-    color: #1C5550;
+    color: var(--primary_color);
     font-family: 'Inter', sans-serif;
     font-size: 24px;
     font-style: normal;
@@ -197,7 +205,7 @@ aside {
 }
 
 .bottom_p {
-    color: #DFD9D9;
+    color: var(--text_frame);
     font-family: 'Inter', sans-serif;
     line-height: 24px;
     margin: 8px 0 8px 0;
@@ -207,11 +215,11 @@ aside {
     display: inline-flex;
     align-items: center;
     gap: 144px;
-    background: #DFD9D9;
+    background: var(--text_frame);
 }
 
 .bottom_price {
-    color: #1C5550;
+    color: var(--primary_color);
     font-family: 'Inter', sans-serif;
     font-weight: 700;
     line-height: 24px;
@@ -225,8 +233,8 @@ aside {
     padding: 9px 8px 9px 10px;
     justify-content: center;
     align-items: center;
-    background: #C3B97F;
-    color: #DFD9D9;
+    background: var(--button)F;
+    color: var(--text_frame);
     font-family: 'Inter', sans-serif;
     font-size: 14px;
     font-weight: 700;
