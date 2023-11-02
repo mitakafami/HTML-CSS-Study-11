@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+
+.container {
+    width: 1440px;
+    margin: auto;
+    display: grid;
+    padding: 32px 20px;
+    background-color: #1C5550;
+    column-gap: 40px;
+    row-gap: 48px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 100px 150px 150px 200px;
+    grid-template-areas:
+        "HEADER HEADER HEADER HEADER"
+        "ASIDE BCARD BCARD IMG1"
+        "ASIDE BCARD BCARD IMG2"
+        "CARD1 CARD2 CARD3 CARD4";
+}
+
+div {
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 40px;
+    /* background-color: red;
+    border: 3px solid; */
+    grid-area: HEADER;
+}
+
+.header_logo {
+    /* width: 48px;
+    height: 48px; */
+}
+
+ul {
+    display: flex;
+    column-gap: 84px;
+}
+
+.header_text {
+    color: #DFD9D9;
+    font-family: 'Inter', sans-serif;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.right_side {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    column-gap: 32px;
+}
+
+.search {
+    display: flex;
+    width: 315px;
+    height: 32px;
+    padding: 8px 20px 7px 20px;
+    justify-content: flex-end;
+    align-items: flex-start;
+    gap: 100px;
+    flex-shrink: 0;
+    border-radius: 4px;
+    background: rgba(0, 0, 0, 0.20);
+    box-shadow: 1.52px 3px 3px -0.8px rgba(0, 0, 0, 0.20) inset, 0px -0.3px 1px 0px rgba(223, 217, 217, 0.40) inset;
+}
+
+.search_icon {}
+
+.user_icon {
+    padding: 4px;
+    border-radius: 4px;
+    background: rgba(0, 0, 0, 0.20);
+    box-shadow: 0px 2px 4px -2px rgba(223, 217, 217, 0.40) inset, 0px 2px 4px 0px rgba(0, 0, 0, 0.20);
+}
+
+.cart_icon {
+    padding: 4px;
+    border-radius: 4px;
+    background: rgba(0, 0, 0, 0.20);
+    box-shadow: 0px 2px 4px -2px rgba(223, 217, 217, 0.40) inset, 0px 2px 4px 0px rgba(0, 0, 0, 0.20);
+}
+
+aside {
+    font-size: 40px;
+    background-color: green;
+    border: 3px solid;
+    grid-area: ASIDE;
+}
+
+.big_card {
+    font-size: 40px;
+    background-color: greenyellow;
+    border: 3px solid;
+    grid-area: BCARD;
+}
+
+.img_1_card {
+    font-size: 40px;
+    background-color: blue;
+    border: 3px solid;
+    grid-area: IMG1;
+}
+
+.img_2_card {
+    font-size: 40px;
+    background-color: blueviolet;
+    border: 3px solid;
+    grid-area: IMG2;
+}
+
+.img_card_1 {
+    font-size: 40px;
+    background-color: yellow;
+    border: 3px solid;
+    grid-area: CARD1;
+}
+
+.img_card_2 {
+    font-size: 40px;
+    background-color: yellow;
+    border: 3px solid;
+    grid-area: CARD2;
+}
+
+.img_card_3 {
+    font-size: 40px;
+    background-color: yellow;
+    border: 3px solid;
+    grid-area: CARD3;
+}
+
+.img_card_4 {
+    font-size: 40px;
+    background-color: yellow;
+    border: 3px solid;
+    grid-area: CARD4;
+}
